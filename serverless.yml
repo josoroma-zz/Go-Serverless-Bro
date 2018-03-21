@@ -1,0 +1,13 @@
+service: happy-hacking-bro
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  happyHackingBro:
+    handler: handler.happyHackingBro
+    events:
+      - http:
+          path: bro
+          method: get
