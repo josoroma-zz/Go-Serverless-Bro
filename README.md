@@ -101,15 +101,13 @@ serverless --version
 
 - https://console.aws.amazon.com
 
-## Create a user
+## Create a new user
+
+- https://console.aws.amazon.com/iam/home?#/users$new?step=details
 
 - https://serverless.com/framework/docs/providers/aws/guide/credentials
 
 ![AWS account](./public/img/01-get-an-aws-account.png)
-
-Create a new user:
-
-https://console.aws.amazon.com/iam/home?#/users$new?step=details
 
 Provide a `username` and a `password`. During creation please check only their `Administrator Access`.
 
@@ -348,7 +346,24 @@ x-amzn-RequestId: e11bdacc-2d51-11e8-b9ba-93aa1475ffcf
 
 ![User Details](./public/img/05-get-bro-endpoint.png)
 
+## AWS - Invoke Local
+
+- https://serverless.com/framework/docs/providers/aws/cli-reference/invoke-local
+
+```
+serverless invoke local --function happyHackingBro
+```
+
+```
+{
+    "statusCode": 200,
+    "body": "{\"message\":\"Happy Hacking Bro!\",\"input\":\"\"}"
+}
+```
+
 ## Remove current Serverless service and all resources
+
+- https://serverless.com/framework/docs/providers/aws/cli-reference/remove
 
 ```
 serverless remove
