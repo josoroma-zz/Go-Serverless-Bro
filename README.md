@@ -342,6 +342,23 @@ x-amzn-RequestId: e11bdacc-2d51-11e8-b9ba-93aa1475ffcf
 }
 ```
 
+## Via Browser
+
+`chrome https://hackerman.execute-api.us-east-1.amazonaws.com/dev/bro`
+
 ![User Details](./public/img/05-get-bro-endpoint.png)
 
+## Remove current Serverless service and all resources
 
+```
+serverless remove
+```
+
+```
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+....................
+Serverless: Stack removal finished...
+```
